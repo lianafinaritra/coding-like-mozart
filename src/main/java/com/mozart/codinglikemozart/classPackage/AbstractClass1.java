@@ -2,10 +2,14 @@ package com.mozart.codinglikemozart.classPackage;
 
 import com.mozart.codinglikemozart.dependance.ConcreteDependance1;
 import com.mozart.codinglikemozart.dependance.ConcreteDependance2;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
 import org.springframework.stereotype.Component;
 
 @Component
-public class AbstractClass1 {
-    public ConcreteDependance1 concreteDependance1;
-    public ConcreteDependance2 concreteDependance2;
+@AllArgsConstructor
+@Getter
+public abstract class AbstractClass1 {
+    private ConcreteDependance1 concreteDependance1;
+    private ConcreteDependance2 concreteDependance2;
 }
